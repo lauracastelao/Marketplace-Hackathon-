@@ -1,0 +1,112 @@
+[
+    {
+        "id_curso": "1",
+        "name": "Full Stack",
+        "description": "Conviértete en un desarrollador web full stack. Aprende diseño Front-end y arquitectura Back-end además de las tecnologías más punteras. Aprenderás a programar a partir de los fundamentos de HTML5, CSS3, JavaScript, Node.js, Express, MongoDB y React. Puedes realizar este curso a tiempo completo o parcial.",
+        "duration": "500 hs",
+        "price": "$150",
+        "modality": "Presencial",
+        "formador/a": "Tania Rodriguez",
+        "coformador/a": "David Soto",
+        "location": "Madrid, Espana"
+    },
+    {
+        "id_curso": "2",
+        "name": "Marketing",
+        "description": "Aprenda Marketing Digital para crecer su negocio: Marketing de redes sociales, Facebook, SEO, YouTube, E-mail Marketing.",
+        "duration": "200 hs",
+        "price": "$100",
+        "modality": "on-line",
+        "formador/a": "Juan Fernandez",
+        "coformador/a": "Marta Benitez",
+        "location": "Medellin, Colombia"
+    },
+    {
+        "id_curso": "3",
+        "name": "Data Analytics",
+        "description": "vas a aprender como hacer informes y reportes con dashboards en distintos proyectos, ejercicios y prácticas",
+        "duration": "400 hs",
+        "price": "$200",
+        "modality": "Presencial",
+        "formador/a": "Agustin Mollano",
+        "coformador/a": "Sandra Rosta",
+        "location": "Barcelona, Espana"
+    },
+    {
+        "id_curso": "4",
+        "name": "Diseño UX/UI",
+        "description": "Conviértete en un diseñador UX/UI. Aprende a realizar diseños en los que el usuario sea el protagonista gracias a el proceso de Design Thinking y valida tus ideas a través de los conceptos de user research, prototipado, user testing y la evaluación heurística. Puedes realizar este curso a tiempo completo o parcial.",
+        "duration": "400 hs",
+        "price": "$300",
+        "modality": "Presencial",
+        "formador/a": "Anna Perez",
+        "coformador/a": "Juan Alberto",
+        "location": "Valencia, Espana"
+    },
+    {
+        "id_curso": "5",
+        "name": "Python TOTAL",
+        "description":"Aplicarás Python en aplicaciones como: Juegos, Inteligencia Artificial, Machine Learning, Data Science, Gestión Administrativa y mucho más",
+        "duration": "350 hs",
+        "price": "$100",
+        "modality": "on-line",
+        "formador/a": "Sofia Castro",
+        "coformador/a": "Macarenas Garcia",
+        "location": "Buenos Aires, Argentina"
+    },
+    {
+        "id_curso": "6",
+        "name": "Angular",
+        "description":"Crear aplicaciones en Angular siguiendo las mejores prácticas. Dominar TypeScript para crear aplicaciones en Angular",
+        "duration": "300 hs",
+        "price": "$120",
+        "modality": "Presencial",
+        "formador/a": "Miguel Sanches",
+        "coformador/a": "Marta Saltos",
+        "location": "Galicia, Barcelona"
+    },
+    {
+        "id_curso": "7",
+        "name": "PHP",
+        "description":"Aplicará los diferentes tipos de datos que se manejan en PHP y las reglas generales para nombrar las variables.",
+        "duration": "250 hs",
+        "price": "$200",
+        "modality": "on-line",
+        "formador/a": "Madai Garcia",
+        "coformador/a": "Juan Castillo",
+        "location": "Tennesses, USA"
+    },
+    {
+        "id_curso": "8",
+        "name": "Bases de datos (SQL)",
+        "description":"este curso debería ser tomado no solo por aquellos que no posean conocimientos sobre bases de datos, sino por cada profesional que desee optimizar al máximo las bases de datos con las que trabaja.",
+        "duration": "500 hs",
+        "price": "$400",
+        "modality": "Presencial",
+        "formador/a": "Lucas Potro",
+        "coformador/a": "Leonela Solas",
+        "location": "Barcelona, Espana"
+    },
+    {
+        "id_curso": "9",
+        "name": "Git y GitHub desde Cero a Experto",
+        "description":"Sistema de control de versiones Git y GitHub desde cero, de manera rápida, bien explicada y 100% Actualizado!",
+        "duration": "200 hs",
+        "price": "$80",
+        "modality": "Presencial",
+        "formador/a": "Augusto Garcia",
+        "coformador/a": "Mariela Matos",
+        "location": "Madrid, Espana"
+    },    
+    {
+        "id_curso": "",
+        "name": "",
+        "description":"",
+        "duration": "",
+        "price": "",
+        "modality": "",
+        "formador/a": "",
+        "coformador/a": "",
+        "location": ""
+    }
+]

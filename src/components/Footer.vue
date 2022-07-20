@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <h1>Hola soy Carrito de compras</h1>
+  <h1>copyright</h1>
 </template>
 
 <style lang="css" scoped>
