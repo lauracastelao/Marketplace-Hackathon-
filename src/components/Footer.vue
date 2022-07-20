@@ -1,17 +1,15 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
-
-  <div class="text-center p-3" style="background-color: #10AD91;" id="foo">
-    © 2020 Copyright: Educoders <p>&#128512;</p>
-    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  <div class="text-center p-3" style="background-color: #10ad91" id="foo">
+    © 2020 Copyright: Educoders
+    <p>&#128512;</p>
+    <a class="text-white">Hackathon 2022</a>
   </div>
-  
-
 </template>
 
 <style lang="css" scoped>
-
+#foo {
+  font-size: 3vh;
+}
 </style>
