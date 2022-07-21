@@ -88,4 +88,8 @@ button {
   color:white;
   font-size:small;
 }
+
+div{
+  margin:auto;
+}
 </style> 
