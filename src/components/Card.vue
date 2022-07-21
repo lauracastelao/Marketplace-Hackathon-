@@ -34,7 +34,7 @@ const picturesFind = addPicture.value.forEach((t)=> {
       <br />
       <button type="button" class="btn btn-secondary">Saber más...</button>
       <button class="heart" @click="toggle(advertiser.id)">❤️</button>
-      <button type="button" class="btn btn-success">Contactar 
+     <button type="button" class="btn btn-success">Contactar
             <RouterLink to="/contact"></RouterLink>
       </button>
     </div>

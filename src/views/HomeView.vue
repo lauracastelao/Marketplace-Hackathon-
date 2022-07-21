@@ -13,4 +13,5 @@ import Card from "../components/Card.vue";
 
 <style scoped>
 @import "../assets/card.css";
+
 </style>

@@ -45,5 +45,5 @@ const {advertisersCompleted, deleteAdvertiser} = advertisersFactory();
 </template>
 
 <style  scoped>
-@import '../assets/card.css';
+
 </style> 
