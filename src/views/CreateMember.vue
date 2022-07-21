@@ -95,7 +95,7 @@ const addAndNavigate = (
       </div>
       <div class="col-12 mt-4">
         <div class="card p-3">
-          <p class="mb-0 fw-bold h4">Payment Methods</p>
+          <p class="mb-0 fw-bold h4">Metodos de pago</p>
         </div>
       </div>
       <div class="col-12">
@@ -103,14 +103,7 @@ const addAndNavigate = (
           <div class="card-body border p-0">
             <p>
               <a
-                class="
-                  btn btn-primary
-                  w-100
-                  h-100
-                  d-flex
-                  align-items-center
-                  justify-content-between
-                "
+                class="btn btn-primary w-100 h-100 d-flex align-items-center justify-content-between"
                 data-bs-toggle="collapse"
                 href="#collapseExample"
                 role="button"
@@ -118,6 +111,7 @@ const addAndNavigate = (
                 aria-controls="collapseExample"
               >
                 <span class="fw-bold">PayPal</span>
+
                 <span class="fab fa-cc-paypal"> </span>
               </a>
             </p>
@@ -127,11 +121,11 @@ const addAndNavigate = (
                   <p class="h4 mb-0">Resumen de compra</p>
                   <p class="mb-0">
                     <span class="fw-bold">Producto:</span
-                    ><span class="c-green">: Curso JavaScript 100 horas</span>
+                    ><span class="c-green">: Cuenta Standar</span>
                   </p>
                   <p class="mb-0">
                     <span class="fw-bold">Precio:</span
-                    ><span class="c-green">:$90</span>
+                    ><span class="c-green">:$5</span>
                   </p>
                 </div>
               </div>
@@ -140,15 +134,7 @@ const addAndNavigate = (
           <div class="card-body border p-0">
             <p>
               <a
-                class="
-                  btn btn-primary
-                  p-2
-                  w-100
-                  h-100
-                  d-flex
-                  align-items-center
-                  justify-content-between
-                "
+                class="btn btn-primary p-2 w-100 h-100 d-flex align-items-center justify-content-between"
                 data-bs-toggle="collapse"
                 href="#collapseExample"
                 role="button"
@@ -169,11 +155,11 @@ const addAndNavigate = (
                   <p class="h4 mb-0">Resumen de compra</p>
                   <p class="mb-0">
                     <span class="fw-bold">Producto:</span
-                    ><span class="c-green">: Curso Vue 50 horas</span>
+                    ><span class="c-green">: Cuenta Premium</span>
                   </p>
                   <p class="mb-0">
                     <span class="fw-bold">Precio:</span>
-                    <span class="c-green">:$30.90</span>
+                    <span class="c-green">:$30</span>
                   </p>
                   <p class="mb-0"></p>
                 </div>
@@ -227,7 +213,9 @@ const addAndNavigate = (
                         </div>
                       </div>
                       <div class="col-12">
-                        <!-- <button type="button" >Pagar </button> -->
+                        <button type="button" class="btn btn-info">
+                          Pagar
+                        </button>
                       </div>
                     </div>
                   </form>
@@ -238,47 +226,47 @@ const addAndNavigate = (
         </div>
       </div>
       <div class="col-12">
-        <div class="btn btn-danger payment">Métodos de pago</div>
+        <!-- <div class="btn btn-danger payment">Métodos de pago</div> -->
       </div>
     </div>
   </div>
 
   <div class="container">
-    <label for="new-task">Add Curses</label>
+    <label for="new-task"><strong>Añadir curso</strong></label>
     <br />
     <label>Name</label>
     <br />
     <input id="new-task" type="text" v-model="name" />
     <br />
-    <label>description</label>
+    <label>Description</label>
     <br />
     <input id="new-task" type="text" v-model="description" />
     <br />
-    <label>duration</label>
+    <label>Duración</label>
     <br />
     <input id="new-task" type="text" v-model="duration" />
     <br />
-    <label>price</label>
+    <label>Precio</label>
     <br />
     <input id="new-task" type="text" v-model="price" />
     <br />
-    <label>modality</label>
+    <label>Modalidad</label>
     <br />
     <input id="new-task" type="text" v-model="modality" />
     <br />
-    <label>formador</label>
+    <label>Formador</label>
     <br />
     <input id="new-task" type="text" v-model="formador" />
     <br />
-    <label>coformador</label>
+    <label>Co-formador</label>
     <br />
     <input id="new-task" type="text" v-model="coformador" />
     <br />
-    <label>Locacion</label>
+    <label>Localización</label>
     <br />
     <input id="new-task" type="text" v-model="location" />
     <br />
-    <label>upload image</label>
+    <label>Subir imagen</label>
     <br />
     <input type="file" name="archivosubido" />
     <input type="submit" value="Enviar datos" />
@@ -300,14 +288,12 @@ const addAndNavigate = (
         )
       "
     >
-      pagar
+      Pagar
     </button>
   </div>
 </template>
 
 <style lang="css" scoped>
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); */
-
 * {
   margin: 0;
   padding: 0;
@@ -452,5 +438,9 @@ body {
 .form-control:focus {
   border: 1.5px solid #1a73e8;
   box-shadow: none;
+}
+
+h4 {
+  font-size: 2vh;
 }
 </style>

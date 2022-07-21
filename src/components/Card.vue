@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "@vue/reactivity";
 import { advertisersFactory } from "../todosSetup";
-import addPictures from '../mock/all.js'
+import addPictures from "../mock/all.js";
 
 const { advertisersIncompleted, toggle } = advertisersFactory();
 /* const addPicture = ref([...addPictures]);
@@ -13,58 +13,69 @@ const picturesFind = addPicture.value.forEach((t)=> {
 
 <template>
   <div class="img_banner">
-    <img class="banner_head" src="../assets/img/Hackea tu educación (2).png" alt="">
+    <img
+      class="banner_head"
+      src="../assets/img/Hackea tu educación (2).png"
+      alt=""
+    />
   </div>
-  <div class="card container-fluid  border-0 " style="width: 18rem">
-
-  
-
-  <!-- <img v-for="addPicture in addPictures" :key="addPicture.cover"
+  <div class="card container-fluid border-0" style="width: 18rem">
+    <!-- <img v-for="addPicture in addPictures" :key="addPicture.cover"
       :src="addPictures"
       class="card-img-top"
     > -->
+    <div class="card" style="width: 18rem"></div>
     <div
       class="card-body"
       v-for="advertiser in advertisersIncompleted"
       :key="advertiser.id"
     >
-      <p class="card-text">{{ advertiser.name }}</p>
+      <div class="images">
+        <img src="src\assets\Vue.png" />
+        <p class="card-text">
+          <strong>{{ advertiser.name }}</strong>
+        </p>
+      </div>
+      <br />
       <p class="card-text">{{ advertiser.description }}</p>
       <strong>{{ advertiser.price }}</strong>
       <br />
-      <button type="button" class="btn btn-secondary">Saber más...</button>
-      <button class="heart" @click="toggle(advertiser.id)">❤️</button>
-      <button class="nav-item">
-            <RouterLink to="/contact">contact</RouterLink>
-      </button>
+      <div class="buttons">
+        <button type="button" class="btn btn-secondary">Saber más...</button>
+
+        <button type="button" class="btn btn-success">
+          Contactar
+          <RouterLink to="/contact"></RouterLink>
+        </button>
+
+        <button class="heart" @click="toggle(advertiser.id)">❤️</button>
+      </div>
     </div>
   </div>
+  
 </template>
 
 <style lang="css" scoped>
-
-
-.img_banner{
+.img_banner {
   width: 100%;
   height: 50%;
 }
-.banner_head{
+.banner_head {
   width: 100%;
   height: 20%;
 }
 .card {
   display: flex;
-  margin-top:4%;
-  align-items: center;  
+  margin-top: 4%;
+  align-items: center;
 }
 
 .heart {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   border: none;
   background-color: transparent;
 }
-
 
 .btn {
   display: flex;
@@ -75,5 +86,17 @@ const picturesFind = addPicture.value.forEach((t)=> {
   margin-bottom: 20%;
   width: 130%;
   box-shadow: 2px 2px 2px 2px rgb(138, 138, 138);
-} 
+}
+
+.images {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+
+  height: 4vh;
+}
 </style>

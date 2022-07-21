@@ -6,7 +6,7 @@
 <h2>Login</h2>
 <p>¿Eres profesor?</p>
 <div>
-  <div class="mb-3">
+  <div class="mb-3" id="logear">
     <label for="exampleInputEmail1" class="form-label">Email</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
@@ -27,5 +27,10 @@
 
 a{
   color:white;
+}
+
+#logear{
+  width:30vh;
+
 }
 </style>
