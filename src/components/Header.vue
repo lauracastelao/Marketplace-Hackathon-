@@ -7,7 +7,7 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-light fixed-top d-flex">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Educoders 🥸</a>
+      <a class="navbar-brand" href="#">Educoders 🥇</a>
       <button
         class="navbar-toggler"
         type="button"
