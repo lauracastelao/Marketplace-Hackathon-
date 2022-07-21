@@ -4,9 +4,22 @@
 // import Header from './components/Header.vue';
 // import Footer1 from './components/Footer.vue';
 
+import { ref } from '@vue/reactivity';
 import BootHeader from './components/BootHeader.vue';
 import Header from './components/Header.vue';
+import serviceAsync from './service/servicesAsync';
+import { advertisersFactory } from './todosSetup';
 
+const {update} = advertisersFactory();
+
+const isLoading = ref(true);
+
+async function prefetch() {
+  update(await serviceAsync.getAdvertiser());
+  isLoading.value = false;
+}
+
+prefetch();
 
 </script>
 

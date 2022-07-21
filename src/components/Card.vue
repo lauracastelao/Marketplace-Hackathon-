@@ -1,15 +1,25 @@
 <script setup>
+import { ref } from "@vue/reactivity";
 import { advertisersFactory } from "../todosSetup";
+import addPictures from '../mock/all.js'
+
 const { advertisersIncompleted, toggle } = advertisersFactory();
+/* const addPicture = ref([...addPictures]);
+
+const picturesFind = addPicture.value.forEach((t)=> {
+})
+ */
 </script>
 
 <template>
   <div class="card" style="width: 18rem">
-    <img
-      src="https://miro.medium.com/max/1200/1*XpExcSt-d8XdnkIT3bcutg.jpeg"
+
+   <!--  <img v-for="addPicture in addPictures" :key="addPicture.cover"
+      :src="addPictures"
       class="card-img-top"
-      alt="..."
-    />
+    > -->
+  
+
     <div
       class="card-body"
       v-for="advertiser in advertisersIncompleted"
