@@ -1,9 +1,8 @@
 <script setup></script>
 
 <template>
-  <nav class="navbar navbar-expand-lg bg-light fixed-top d-flex">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+  <nav class="navbar navbar-expand-lg fixed-top d-flex">
+    <div class="container-fluid mr-5">
       <button
         class="navbar-toggler"
         type="button"
@@ -47,8 +46,36 @@
 </template>
 
 <style lang="css">
-.nav-item {
+.nav-item  {
   display: flex;
   justify-content: space-evenly;
+  
 }
+
+a {
+  text-decoration: none;
+  margin-right: 5rem;
+  color: white;
+  font-size: 1.2rem;
+  
+}
+
+.btn-outline-success {
+  color: whitesmoke;
+  border-color: white;
+}
+
+.navbar {
+  background-color: rgba(16, 173, 145, 1);
+}
+
+#navbarSupportedContent {
+  margin-left: 1rem;
+}
+
+#logo {
+  margin-left: 1rem;
+}
+
+
 </style>
