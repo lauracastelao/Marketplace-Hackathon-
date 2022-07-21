@@ -1,9 +1,13 @@
-<script setup></script>
+<script setup>
+  import {advertisersFactory} from '../todosSetup';
+
+  const {filterByWorld} = advertisersFactory();
+  </script>
 
 <template>
   <nav class="navbar navbar-expand-lg bg-light fixed-top d-flex">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Educoders 🥸</a>
+      <a class="navbar-brand" href="#">Educoders 🥇</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -41,7 +45,9 @@
             placeholder="Search"
             aria-label="Search"
           />
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button @click="filterByWorld(advertisers.name)" class="btn btn-outline-success">Search</button>
+          <!-- <button class="heart" @click="toggle(advertiser.id)">❤️</button> -->
+           <!-- v-for="advertisers in filterByWorld" :key="advertisers.name" -->
         </form>
       </div>
     </div>

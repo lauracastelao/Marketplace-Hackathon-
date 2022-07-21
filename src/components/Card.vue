@@ -12,7 +12,12 @@ const picturesFind = addPicture.value.forEach((t)=> {
 </script>
 
 <template>
+  <div class="img_banner">
+    <img class="banner_head" src="../assets/img/Hackea tu educación (2).png" alt="">
+  </div>
   <div class="card container-fluid  border-0 " style="width: 18rem">
+
+  
 
   <!-- <img v-for="addPicture in addPictures" :key="addPicture.cover"
       :src="addPictures"
@@ -37,9 +42,19 @@ const picturesFind = addPicture.value.forEach((t)=> {
 </template>
 
 <style lang="css" scoped>
+
+
+.img_banner{
+  width: 100%;
+  height: 50%;
+}
+.banner_head{
+  width: 100%;
+  height: 20%;
+}
 .card {
   display: flex;
-  margin-top: 12%;
+  margin-top:4%;
   align-items: center;  
 }
 
