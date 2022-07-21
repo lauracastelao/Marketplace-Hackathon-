@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <nav class="navbar navbar-expand-lg bg-light fixed-top">
+  <nav class="navbar navbar-expand-lg bg-light fixed-top d-flex">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button
@@ -11,21 +11,20 @@
         data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <RouterLink to="/">Home</RouterLink>
-          </li>
-          <li class="nav-item">
-            <RouterLink to="/course">Cursos</RouterLink>
-          </li>
-          <li class="nav-item">
-            <RouterLink to="/favourites">Favoritos</RouterLink>
-          </li>
+            <li class="nav-item">
+                <RouterLink to="/">Home</RouterLink>
+            </li>
+            <li class="nav-item">
+                <RouterLink to="/course">Cursos</RouterLink>
+            </li>
+            <li class="nav-item">
+              <RouterLink to="/favourites">Favoritos</RouterLink>
+            </li>
           <li class="nav-item">
             <RouterLink to="/cart">Cart</RouterLink>
           </li>
@@ -47,4 +46,9 @@
   </nav>
 </template>
 
-<style lang="css"></style>
+<style lang="css">
+.nav-item {
+  display: flex;
+  justify-content: space-evenly;
+}
+</style>

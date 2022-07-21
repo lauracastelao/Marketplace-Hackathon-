@@ -1,6 +1,6 @@
 <template>
   <header>
-    <img src="src\assets\logoEduCoders.jpg" id="logo" />
+    <img src="src\assets\EducodersLogo.png" id="logo" />
     <h1>EDUCODERS</h1>
   </header>
 </template>
@@ -20,6 +20,9 @@ h1 {
   justify-content: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 5vh;
-  
+}
+
+img {
+  width: 10vh;
 }
 </style>
