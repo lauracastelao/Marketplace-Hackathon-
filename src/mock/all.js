@@ -10,7 +10,7 @@ const advertisers = [
     formador: 'Tania Rodriguez',
     coformador: 'David St',
     location: 'Madrid, sana',
-    cover:'https://www.noticias.ltda/wp-content/uploads/2019/02/Curso-online.png',
+    cover:'../assets/img/logo.png',
    completed: false
 },
   {
@@ -120,9 +120,9 @@ const advertisers = [
     cover: 'https://github.com/explore',
     completed: false
 }
-]
+];
 
-export default advertisers;
+export default advertisers ;
 
 // ,
 //   {
