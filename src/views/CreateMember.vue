@@ -1,20 +1,34 @@
 <script setup>
+import router from "../router";
 import { advertisersFactory } from "../todosSetup";
 const { add } = advertisersFactory();
-const addAndNavigate = (name, description) => {
-  add(name, description);
+const addAndNavigate = (
+  name,
+  description,
+  duration,
+  price,
+  modality,
+  formador,
+  coformador,
+  location,
+  cover
+) => {
+  add(
+    name,
+    description,
+    duration,
+    price,
+    modality,
+    formador,
+    coformador,
+    location,
+    cover
+  );
+  router.push("/");
 };
 </script>
 
 <template>
-   <div class="container">
-      <label for="new-task">Añadir curso</label>
-       
-      <input id="new-task" type="text" v-model="name">
-       <input id="new-task" type="text" v-model="description"> 
-      <button type="add" @click="add(name, description)">Add</button>
-  </div> 
-
   <div class="container">
     <div class="row">
       <div class="col-lg-4 mb-lg-0 mb-3">
@@ -89,7 +103,14 @@ const addAndNavigate = (name, description) => {
           <div class="card-body border p-0">
             <p>
               <a
-                class="btn btn-primary w-100 h-100 d-flex align-items-center justify-content-between"
+                class="
+                  btn btn-primary
+                  w-100
+                  h-100
+                  d-flex
+                  align-items-center
+                  justify-content-between
+                "
                 data-bs-toggle="collapse"
                 href="#collapseExample"
                 role="button"
@@ -119,7 +140,15 @@ const addAndNavigate = (name, description) => {
           <div class="card-body border p-0">
             <p>
               <a
-                class="btn btn-primary p-2 w-100 h-100 d-flex align-items-center justify-content-between"
+                class="
+                  btn btn-primary
+                  p-2
+                  w-100
+                  h-100
+                  d-flex
+                  align-items-center
+                  justify-content-between
+                "
                 data-bs-toggle="collapse"
                 href="#collapseExample"
                 role="button"
@@ -213,6 +242,67 @@ const addAndNavigate = (name, description) => {
         <!-- <div class="btn btn-danger payment">Métodos de pago</div> -->
       </div>
     </div>
+  </div>
+
+  <div class="container">
+    <label for="new-task">Add Curses</label>
+    <br />
+    <label>Name</label>
+    <br />
+    <input id="new-task" type="text" v-model="name" />
+    <br />
+    <label>description</label>
+    <br />
+    <input id="new-task" type="text" v-model="description" />
+    <br />
+    <label>duration</label>
+    <br />
+    <input id="new-task" type="text" v-model="duration" />
+    <br />
+    <label>price</label>
+    <br />
+    <input id="new-task" type="text" v-model="price" />
+    <br />
+    <label>modality</label>
+    <br />
+    <input id="new-task" type="text" v-model="modality" />
+    <br />
+    <label>formador</label>
+    <br />
+    <input id="new-task" type="text" v-model="formador" />
+    <br />
+    <label>coformador</label>
+    <br />
+    <input id="new-task" type="text" v-model="coformador" />
+    <br />
+    <label>Locacion</label>
+    <br />
+    <input id="new-task" type="text" v-model="location" />
+    <br />
+    <label>upload image</label>
+    <br />
+    <input type="file" name="archivosubido" />
+    <input type="submit" value="Enviar datos" />
+    <br />
+    <button
+      type="add"
+      class="btn btn-info container d-flex justify-content-center"
+      @click="
+        addAndNavigate(
+          name,
+          description,
+          duration,
+          price,
+          modality,
+          formador,
+          coformador,
+          location,
+          cover
+        )
+      "
+    >
+      pagar
+    </button>
   </div>
 </template>
 
