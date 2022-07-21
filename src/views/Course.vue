@@ -1,9 +1,12 @@
 <script setup>
+import Card from '../components/Card.vue';
 
 </script>
 
 <template>
-  <h1></h1>
+    <div>
+      <Card/>
+    </div>
   
 </template>
 

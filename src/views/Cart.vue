@@ -122,6 +122,9 @@ button {
   margin-top: 20%;
 }
 .checkout_button {
+  text-align: center;
+  display: flex;
+  justify-content: center;
   width: 50%;
   height: 50%;
 }
@@ -130,7 +133,7 @@ button {
   margin-right: 0;
 }
 
-@media (max-width: 1440px) {
+@media (min-width: 1440px) {
   .checkout_button {
     width: 20%;
     height: 50%;
@@ -139,7 +142,7 @@ button {
     margin-top: 10%;
   }
 }
-@media (max-width: 2560px) {
+@media (min-width: 2560px) {
   .checkout_button {
     width: 20%;
     height: 50%;
