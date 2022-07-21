@@ -6,6 +6,7 @@ const { advertisersIncompleted, toggle } = advertisersFactory();
 
 <template>
   <h3>Cursos</h3>
+
   <div class="grid">
     <div
       class="box"
