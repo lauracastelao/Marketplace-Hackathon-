@@ -4,6 +4,8 @@
 
 
 <template>
+
+  
 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
   <div class="modal" tabindex="-1">
   <div class="modal-dialog">
@@ -16,14 +18,32 @@
         <p>Modal body text goes here.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="heart">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
 </div>
 </div>
+
+
+
 </template>
 
 <style lang="css" scoped>
+button {
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+}
+.card-body {
+  padding: 7vh;
+  margin-bottom: 20vh;
+  width: 40vh;
+}
+.card {
+  margin-top: 10vh;
+  width: 30vh;
+  height: 40vh;
+}
 </style>

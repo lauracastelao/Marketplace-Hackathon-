@@ -8,7 +8,7 @@
       <img src="src\assets\EducodersLogo.png" />
        
     </div>
-    <h1>EDUCODERS</h1>
+    
   </header>
 </template>
 
@@ -19,7 +19,6 @@ header {
   padding-bottom: 10vh;
   margin: 0;
   display:flex;
-
 }
 
 h1 {
@@ -40,6 +39,8 @@ img{
   width: 100%;
   height: 50%;
 }
+
+
 
 
 </style>

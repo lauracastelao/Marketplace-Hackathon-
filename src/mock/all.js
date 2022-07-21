@@ -16,8 +16,7 @@ const advertisers = [
   {
     id: 2,
     name: 'Marketing',
-    description:
-      'Aprenda Marketing Digital para crecer su negocio: Marketing de redes sociales, Facebook, SEO, YouTube, E-mail Marketing.',
+    description:'Aprenda Marketing Digital para crecer su negocio: Marketing de redes sociales, Facebook, SEO, YouTube, E-mail Marketing.',
     duration: '200 hs',
     price: '$100',
     modality: 'on-line',

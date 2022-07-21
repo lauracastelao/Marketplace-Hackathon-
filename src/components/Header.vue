@@ -3,7 +3,7 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-light fixed-top d-flex">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">Educoders 🥸</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -11,26 +11,28 @@
         data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
-        aria-label="Toggle navigation">
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <RouterLink to="/">Home</RouterLink>
-            </li>
-            <li class="nav-item">
-                <RouterLink to="/course">Cursos</RouterLink>
-            </li>
-            <li class="nav-item">
-              <RouterLink to="/favourites">Favoritos</RouterLink>
-            </li>
+          <li class="nav-item">
+            <RouterLink to="/">Home</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink to="/course">Cursos</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink to="/favourites">Favoritos</RouterLink>
+          </li>
           <li class="nav-item">
             <RouterLink to="/cart">Cart</RouterLink>
           </li>
           <li class="nav-item">
             <RouterLink to="/member">Members</RouterLink>
           </li>
+         
         </ul>
         <form class="d-flex" role="search">
           <input
@@ -50,5 +52,14 @@
 .nav-item {
   display: flex;
   justify-content: space-evenly;
+}
+a {
+  text-decoration: none;
+  margin-right: 1rem;
+  color: #000;
+}
+
+a:hover {
+  color: crimson;
 }
 </style>
