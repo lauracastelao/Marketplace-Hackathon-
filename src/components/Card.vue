@@ -13,7 +13,7 @@ const picturesFind = addPicture.value.forEach((t)=> {
 
 <template>
   <div class="img_banner">
-    <img class="banner_head" src="../assets/img/Hackea tu educación (1).png" alt="">
+    <img class="banner_head" src="../assets/img/Hackea tu educación (2).png" alt="">
   </div>
   <div class="card container-fluid  border-0 " style="width: 18rem">
 
