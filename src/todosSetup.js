@@ -24,6 +24,10 @@ const add = (name, description) => {
 };
 
 
+const update = (payload) => {
+  advertisers.value = payload;
+}
+
   const deleteAdvertiser = (id) => {
     advertisers.value = advertisers.value.filter((t) => t.id !== id);
   };
@@ -33,7 +37,8 @@ const add = (name, description) => {
     advertisersCompleted,
     toggle,
     deleteAdvertiser,
-    add
+    add,
+    update
     //addPictures
   });
 

@@ -24,8 +24,10 @@ prefetch();
 </script>
 
 <template>
+<h3 v-if="isLoading">Loading...</h3>
 
-   <header id="header">
+<template v-if="!isLoading"> 
+<header id="header">
   <Header/>
    </header>
     <div id="bootheader">
@@ -41,6 +43,8 @@ prefetch();
 
 
   <RouterView />
+</template>
+   
 </template>
 
 <style scoped>
