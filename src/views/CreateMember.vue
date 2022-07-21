@@ -103,14 +103,7 @@ const addAndNavigate = (
           <div class="card-body border p-0">
             <p>
               <a
-                class="
-                  btn btn-primary
-                  w-100
-                  h-100
-                  d-flex
-                  align-items-center
-                  justify-content-between
-                "
+                class="btn btn-primary w-100 h-100 d-flex align-items-center justify-content-between"
                 data-bs-toggle="collapse"
                 href="#collapseExample"
                 role="button"
@@ -118,6 +111,7 @@ const addAndNavigate = (
                 aria-controls="collapseExample"
               >
                 <span class="fw-bold">PayPal</span>
+
                 <span class="fab fa-cc-paypal"> </span>
               </a>
             </p>
@@ -140,15 +134,7 @@ const addAndNavigate = (
           <div class="card-body border p-0">
             <p>
               <a
-                class="
-                  btn btn-primary
-                  p-2
-                  w-100
-                  h-100
-                  d-flex
-                  align-items-center
-                  justify-content-between
-                "
+                class="btn btn-primary p-2 w-100 h-100 d-flex align-items-center justify-content-between"
                 data-bs-toggle="collapse"
                 href="#collapseExample"
                 role="button"
@@ -227,8 +213,9 @@ const addAndNavigate = (
                         </div>
                       </div>
                       <div class="col-12">
-                        
-                        <button type="button" class="btn btn-info">Pagar </button>
+                        <button type="button" class="btn btn-info">
+                          Pagar
+                        </button>
                       </div>
                     </div>
                   </form>
@@ -245,41 +232,41 @@ const addAndNavigate = (
   </div>
 
   <div class="container">
-    <label for="new-task">Add Curses</label>
+    <label for="new-task"><strong>Añadir curso</strong></label>
     <br />
     <label>Name</label>
     <br />
     <input id="new-task" type="text" v-model="name" />
     <br />
-    <label>description</label>
+    <label>Description</label>
     <br />
     <input id="new-task" type="text" v-model="description" />
     <br />
-    <label>duration</label>
+    <label>Duración</label>
     <br />
     <input id="new-task" type="text" v-model="duration" />
     <br />
-    <label>price</label>
+    <label>Precio</label>
     <br />
     <input id="new-task" type="text" v-model="price" />
     <br />
-    <label>modality</label>
+    <label>Modalidad</label>
     <br />
     <input id="new-task" type="text" v-model="modality" />
     <br />
-    <label>formador</label>
+    <label>Formador</label>
     <br />
     <input id="new-task" type="text" v-model="formador" />
     <br />
-    <label>coformador</label>
+    <label>Co-formador</label>
     <br />
     <input id="new-task" type="text" v-model="coformador" />
     <br />
-    <label>Locacion</label>
+    <label>Localización</label>
     <br />
     <input id="new-task" type="text" v-model="location" />
     <br />
-    <label>upload image</label>
+    <label>Subir imagen</label>
     <br />
     <input type="file" name="archivosubido" />
     <input type="submit" value="Enviar datos" />
@@ -301,14 +288,12 @@ const addAndNavigate = (
         )
       "
     >
-      pagar
+      Pagar
     </button>
   </div>
 </template>
 
 <style lang="css" scoped>
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); */
-
 * {
   margin: 0;
   padding: 0;
@@ -455,11 +440,7 @@ body {
   box-shadow: none;
 }
 
-
-h4{
-  font-size:2vh;
+h4 {
+  font-size: 2vh;
 }
-
-
-
 </style>

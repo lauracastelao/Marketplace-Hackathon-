@@ -15,7 +15,7 @@ const picturesFind = addPicture.value.forEach((t)=> {
   <div class="img_banner">
     <img
       class="banner_head"
-      src="../assets/img/Hackea tu educación (1).png"
+      src="../assets/img/Hackea tu educación (2).png"
       alt=""
     />
   </div>

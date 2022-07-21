@@ -1,8 +1,8 @@
 <script setup>
-  import {advertisersFactory} from '../todosSetup';
+import { advertisersFactory } from "../todosSetup";
 
-  const {filterByWorld} = advertisersFactory();
-  </script>
+const { filterByWorld } = advertisersFactory();
+</script>
 
 <template>
   <nav class="navbar navbar-expand-lg bg-light fixed-top d-flex">
@@ -31,12 +31,11 @@
             <RouterLink to="/favourites">Favoritos</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink to="/cart">Cart</RouterLink>
+            <RouterLink to="/cart">Carrito</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink to="/member">Members</RouterLink>
+            <RouterLink to="/member">Miembros</RouterLink>
           </li>
-         
         </ul>
         <form class="d-flex" role="search">
           <input
@@ -45,9 +44,12 @@
             placeholder="Search"
             aria-label="Search"
           />
-          <button @click="filterByWorld(advertisers.name)" class="btn btn-outline-success">Search</button>
-          <!-- <button class="heart" @click="toggle(advertiser.id)">❤️</button> -->
-           <!-- v-for="advertisers in filterByWorld" :key="advertisers.name" -->
+          <button
+            @click="filterByWorld(advertisers.name)"
+            class="btn btn-outline-success"
+          >
+            Search
+          </button>
         </form>
       </div>
     </div>
