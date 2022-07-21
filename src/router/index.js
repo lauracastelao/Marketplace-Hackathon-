@@ -32,7 +32,8 @@ const router = createRouter({
       path: '/member',
       name: 'member',
       component: Member
-    }
+    },
+    
   ]
 })
 
