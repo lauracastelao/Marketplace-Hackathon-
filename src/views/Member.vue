@@ -1,5 +1,5 @@
 <script setup>
-import Pop from "../components/Pop.vue";
+import Pop from "../components/CardPop.vue";
 
 </script>
 

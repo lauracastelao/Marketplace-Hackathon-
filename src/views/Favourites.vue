@@ -1,6 +1,6 @@
 <script setup>
 import {advertisersFactory} from '../todosSetup'
-import Pop from '../components/Pop.vue'
+import Pop from '../components/CardPop.vue'
 const {advertisersCompleted, deleteAdvertiser} = advertisersFactory();
 </script>
 
