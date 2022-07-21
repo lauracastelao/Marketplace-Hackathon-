@@ -32,13 +32,26 @@ const update = (payload) => {
     advertisers.value = advertisers.value.filter((t) => t.id !== id);
   };
 
+  //const searchButton = document.querySelector('.btn btn-outline-success');
+  //searchButton.onclick = filterByWorld();
+  
+  const filterByWorld = (name) =>{ 
+    
+    const filtroPorPalabra = advertisers.filter (item => item.name.includes("Angular"))
+    filtroPorPalabra.map(() => {
+      return true;
+    })
+    console.log(filtroPorPalabra);
+  }
+
   const advertisersFactory = () => ({
     advertisersIncompleted,
     advertisersCompleted,
     toggle,
     deleteAdvertiser,
     add,
-    update
+    update,
+    filterByWorld
     //addPictures
   });
 
