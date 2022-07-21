@@ -7,12 +7,13 @@ const addAndNavigate = (name, description) => {
 </script>
 
 <template>
-  <!-- <div class="container">
-      <label for="new-task">New Member's</label>
+   <div class="container">
+      <label for="new-task">Añadir curso</label>
+       
       <input id="new-task" type="text" v-model="name">
        <input id="new-task" type="text" v-model="description"> 
       <button type="add" @click="add(name, description)">Add</button>
-  </div> -->
+  </div> 
 
   <div class="container">
     <div class="row">
@@ -80,7 +81,7 @@ const addAndNavigate = (name, description) => {
       </div>
       <div class="col-12 mt-4">
         <div class="card p-3">
-          <p class="mb-0 fw-bold h4">Payment Methods</p>
+          <p class="mb-0 fw-bold h4">Metodos de pago</p>
         </div>
       </div>
       <div class="col-12">
@@ -105,11 +106,11 @@ const addAndNavigate = (name, description) => {
                   <p class="h4 mb-0">Resumen de compra</p>
                   <p class="mb-0">
                     <span class="fw-bold">Producto:</span
-                    ><span class="c-green">: Curso JavaScript 100 horas</span>
+                    ><span class="c-green">: Cuenta Standar</span>
                   </p>
                   <p class="mb-0">
                     <span class="fw-bold">Precio:</span
-                    ><span class="c-green">:$90</span>
+                    ><span class="c-green">:$5</span>
                   </p>
                 </div>
               </div>
@@ -139,11 +140,11 @@ const addAndNavigate = (name, description) => {
                   <p class="h4 mb-0">Resumen de compra</p>
                   <p class="mb-0">
                     <span class="fw-bold">Producto:</span
-                    ><span class="c-green">: Curso Vue 50 horas</span>
+                    ><span class="c-green">: Cuenta Premium</span>
                   </p>
                   <p class="mb-0">
                     <span class="fw-bold">Precio:</span>
-                    <span class="c-green">:$30.90</span>
+                    <span class="c-green">:$30</span>
                   </p>
                   <p class="mb-0"></p>
                 </div>
@@ -197,7 +198,8 @@ const addAndNavigate = (name, description) => {
                         </div>
                       </div>
                       <div class="col-12">
-                        <div class="btn btn-primary w-100">Sumbit</div>
+                        
+                        <button type="button" class="btn btn-info">Pagar </button>
                       </div>
                     </div>
                   </form>
@@ -208,7 +210,7 @@ const addAndNavigate = (name, description) => {
         </div>
       </div>
       <div class="col-12">
-        <div class="btn btn-danger payment">Métodos de pago</div>
+        <!-- <div class="btn btn-danger payment">Métodos de pago</div> -->
       </div>
     </div>
   </div>
@@ -362,4 +364,12 @@ body {
   border: 1.5px solid #1a73e8;
   box-shadow: none;
 }
+
+
+h4{
+  font-size:2vh;
+}
+
+
+
 </style>

@@ -9,30 +9,30 @@
     <input type="email" class="form-control" id="inputEmail4">
   </div>
   <div class="col-md-6">
-    <label for="inputPassword4" class="form-label">Password</label>
+    <label for="inputPassword4" class="form-label">Construir</label>
     <input type="password" class="form-control" id="inputPassword4">
   </div>
   <div class="col-12">
-    <label for="inputAddress" class="form-label">Address</label>
+    <label for="inputAddress" class="form-label">Dirección</label>
     <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
   </div>
   <div class="col-12">
-    <label for="inputAddress2" class="form-label">Address 2</label>
+    <label for="inputAddress2" class="form-label">Dirección 2</label>
     <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
   </div>
   <div class="col-md-6">
-    <label for="inputCity" class="form-label">City</label>
+    <label for="inputCity" class="form-label">Ciudad</label>
     <input type="text" class="form-control" id="inputCity">
   </div>
   <div class="col-md-4">
-    <label for="inputState" class="form-label">State</label>
+    <label for="inputState" class="form-label">Pais</label>
     <select id="inputState" class="form-select">
       <option selected>Choose...</option>
       <option>...</option>
     </select>
   </div>
   <div class="col-md-2">
-    <label for="inputZip" class="form-label">Zip</label>
+    <label for="inputZip" class="form-label">Código Postal</label>
     <input type="text" class="form-control" id="inputZip">
   </div>
   <div class="col-12">
@@ -44,10 +44,8 @@
     </div>
   </div>
   <div class="col-12">
-     <a class="btn btn-secondary" > <RouterLink to="/createmember"><H6>Add course</H6></RouterLink></a>
-     <!-- <a class="button">
-      <img src="src\assets\img\Visa.png">
-      <a/> -->
+     <a class="btn btn-secondary" > <RouterLink to="/createmember"><H6>Añadir curso</H6></RouterLink></a>
+     
   </div>
 </form>
 
