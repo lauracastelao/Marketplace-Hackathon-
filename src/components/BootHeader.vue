@@ -1,9 +1,14 @@
+
+
+<script></script>
+
 <template>
   <header>
-    <div class="header1">
-    <img src="src\assets\EducodersLogo.png" id="logo" />
-    <h1>EDUCODERS</h1>
+    <div class="head">
+      <img src="src\assets\EducodersLogo.png" />
+       
     </div>
+    <h1>EDUCODERS</h1>
   </header>
 </template>
 
@@ -13,18 +18,28 @@ header {
   height: 8vh;
   padding-bottom: 10vh;
   margin: 0;
+  display:flex;
+
 }
 
 h1 {
-  margin-bottom: 30vh;
+  height: 50%;
   text-align: center;
   display: flex;
   justify-content: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 5vh;
+ 
 }
 
-img {
+img{
   width: 10vh;
 }
+
+.head{
+  width: 100%;
+  height: 50%;
+}
+
+
 </style>

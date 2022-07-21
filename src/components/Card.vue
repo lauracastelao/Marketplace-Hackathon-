@@ -4,14 +4,17 @@ const { advertisersIncompleted, toggle } = advertisersFactory();
 </script>
 
 <template>
-  <div class="card" style="width: 18rem">
+<div class="cards2 container-fluid gap-5">
+  <div class="card d-flex justify-content-center border border-dark" style="width: 18rem">
+  <div class="image">
     <img
       src="https://miro.medium.com/max/1200/1*XpExcSt-d8XdnkIT3bcutg.jpeg"
       class="card-img-top"
       alt="..."
     />
+    </div>
     <div
-      class="card-body"
+      class="card-body border border-dark"
       v-for="advertiser in advertisersIncompleted"
       :key="advertiser.id"
     >
@@ -19,11 +22,13 @@ const { advertisersIncompleted, toggle } = advertisersFactory();
       <p class="card-text">{{ advertiser.description }}</p>
       <strong>{{ advertiser.price }}</strong>
       <br />
-      <button type="button" class="btn btn-secondary">Saber más...</button>
-      <button class="heart" @click="toggle(advertiser.id)">❤️</button>
+      <div class="button3">
+        <button type="button" class="btn btn-secondary">Saber más...</button>
+        <button class="heart" @click="toggle(advertiser.id)">❤️</button>
+      </div>
     </div>
   </div>
-
+</div>
   <!-- <h3>Cursos</h3>
 
   <div class="grid">
@@ -64,4 +69,16 @@ const { advertisersIncompleted, toggle } = advertisersFactory();
   display: flex;
   justify-content: right;
 }
+
+.button3 {
+  display: flex;
+  justify-content: center;
+}
+
+.heart {
+  border: none;
+  background-color: transparent;
+}
+
+
 </style>
