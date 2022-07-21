@@ -1,4 +1,9 @@
 <script setup>
+<<<<<<< HEAD
+import Footer from "../components/Footer.vue";
+import Card from "../components/Card.vue";
+=======
+>>>>>>> 1c5e704fa70ef4332d2037a0fd01d3526c46ff27
 
 import { advertisersFactory } from "../todosSetup";
 const { advertisersIncompleted, toggle } = advertisersFactory();
@@ -10,6 +15,14 @@ const { advertisersIncompleted, toggle } = advertisersFactory();
 
 <Card/>
 <Header/>
+<Footer/>
+</template>
+=======
+  <h3>Cursos</h3>
+
+  <div class="grid">
+    <div
+      class="box"
       v-for="advertiser in advertisersIncompleted"
       :key="advertiser.id"
     >
