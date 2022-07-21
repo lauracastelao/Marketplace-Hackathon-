@@ -4,7 +4,7 @@ const {advertisersCompleted, deleteAdvertiser} = advertisersFactory();
 </script>
 
 <template>
-  <h3>Favoritos</h3>
+  <!-- <h3>Favoritos</h3>
   <div class="grid">
     <div class="box" v-for="advertiser in advertisersCompleted" :key="advertiser.id" @click="toggle(advertiser.id)">
       <button  @click="toggle(advertiser.id)"></button>
@@ -18,6 +18,26 @@ const {advertisersCompleted, deleteAdvertiser} = advertisersFactory();
       <p>{{ advertiser.location }}</p>
       <img :src="advertisers">
       <button class="delete" @click="deleteAdvertiser(advertiser.id)">Delete</button>
+    </div>
+  </div> -->
+
+  <div class="card" style="width: 18rem">
+    <img
+      src="https://miro.medium.com/max/1200/1*XpExcSt-d8XdnkIT3bcutg.jpeg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div
+      class="card-body"
+      v-for="advertiser in advertisersCompleted"
+      :key="advertiser.id"
+    >
+      <p class="card-text">{{ advertiser.name }}</p>
+      <p class="card-text">{{ advertiser.description }}</p>
+      <strong>{{ advertiser.price }}</strong>
+      <br />
+      <button type="button" class="btn btn-secondary">Saber más...</button>
+      <button class="heart" @click="deleteAdvertiser(advertiser.id)">❌</button>
     </div>
   </div>
 </template>
