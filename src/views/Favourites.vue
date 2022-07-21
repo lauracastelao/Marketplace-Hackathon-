@@ -1,6 +1,15 @@
 <script setup>
 import {advertisersFactory} from '../todosSetup'
 const {advertisersCompleted, deleteAdvertiser} = advertisersFactory();
+
+//var arr = JSON.parse(advertisersCompleted);
+
+var nPrecio = advertisersCompleted.reduce((sum, value) => (typeof value.price == "number" ? sum + value.price : sum), 0);
+console.log(nPrecio);
+
+//const nPrecio = Object.values(advertisersCompleted).reduce((acc, {price}) => acc + price ,0);
+//console.log(nPrecio);
+
 </script>
 
 <template>
