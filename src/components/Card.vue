@@ -1,30 +1,39 @@
 <script setup>
+import { ref } from "@vue/reactivity";
 import { advertisersFactory } from "../todosSetup";
+import addPictures from '../mock/all.js'
+
 const { advertisersIncompleted, toggle } = advertisersFactory();
+/* const addPicture = ref([...addPictures]);
+
+const picturesFind = addPicture.value.forEach((t)=> {
+})
+ */
 </script>
 
 <template>
-  <div class="container-card">
-    <div class="cards2">
-      <div
-        class="card-body border border-dark"
-        v-for="advertiser in advertisersIncompleted"
-        :key="advertiser.id"
-      >
-        <img
-          src="https://miro.medium.com/max/1200/1*XpExcSt-d8XdnkIT3bcutg.jpeg"
-          class="card-img-top"
-          alt="..."
-        />
-        <p class="card-text">{{ advertiser.name }}</p>
-        <p class="card-text">{{ advertiser.description }}</p>
-        <strong>{{ advertiser.price }}</strong>
-        <br />
-        <div class="button3">
-          <button type="button" class="btn btn-secondary">Saber más...</button>
-          <button class="heart" @click="toggle(advertiser.id)">❤️</button>
-        </div>
-      </div>
+  <div class="card" style="width: 18rem">
+
+   <!--  <img v-for="addPicture in addPictures" :key="addPicture.cover"
+      :src="addPictures"
+      class="card-img-top"
+    > -->
+  
+
+    <div
+      class="card-body"
+      v-for="advertiser in advertisersIncompleted"
+      :key="advertiser.id"
+    >
+      <p class="card-text">{{ advertiser.name }}</p>
+      <p class="card-text">{{ advertiser.description }}</p>
+      <strong>{{ advertiser.price }}</strong>
+      <br />
+      <button type="button" class="btn btn-secondary">Saber más...</button>
+      <button class="heart" @click="toggle(advertiser.id)">❤️</button>
+      <button class="nav-item">
+            <RouterLink to="/contact">contact</RouterLink>
+      </button>
     </div>
   </div>
 </template>
