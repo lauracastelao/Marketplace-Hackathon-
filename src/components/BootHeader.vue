@@ -1,7 +1,9 @@
 <template>
   <header>
+    <div class="header1">
     <img src="src\assets\EducodersLogo.png" id="logo" />
     <h1>EDUCODERS</h1>
+    </div>
   </header>
 </template>
 
@@ -14,7 +16,7 @@ header {
 }
 
 h1 {
-  height: 40px;
+  margin-bottom: 30vh;
   text-align: center;
   display: flex;
   justify-content: center;
