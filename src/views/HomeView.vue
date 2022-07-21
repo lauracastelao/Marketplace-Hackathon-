@@ -1,9 +1,13 @@
 <script setup>
-import TheWelcome from '@/components/TheWelcome.vue'
+import Card from "../components/Card.vue";
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <Card />
+  <Header />
+  <Footer />
 </template>
+
+<style scoped>
+@import "../assets/card.css";
+</style>
