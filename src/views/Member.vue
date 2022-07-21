@@ -9,18 +9,18 @@ import Pop from "../components/CardPop.vue";
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Edit Course</h5>
-        <p class="card-text">Edit your last Course</p>
-        <a class="btn btn-primary"><RouterLink to="/loginmember">Edit course</RouterLink></a>
+        <h5 class="card-title">¿Ya estás registrado?</h5>
+        <p class="card-text">Accede a tu cuenta</p>
+        <a class="btn btn-secondary" id="login"><RouterLink to="/loginmember">Login</RouterLink></a>
       </div>
     </div>
   </div>
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Created a New Course</h5>
-        <p class="card-text">Creted a new Course</p>      
-        <a class="btn btn-primary" > <RouterLink to="/buyadvertiser"><H6>Add course</H6></RouterLink></a>
+        <h5 class="card-title">Registrate</h5>
+        <p class="card-text">Inscribe tu curso en la plataforma</p>      
+        <a class="btn btn-secondary" > <RouterLink to="/buyadvertiser"><H6>Registrar </H6></RouterLink></a>
       </div>
     </div>
   </div>
@@ -31,5 +31,9 @@ import Pop from "../components/CardPop.vue";
 <style lang="css" scoped>
 h6 {
     color: white;
+}
+
+a{
+  color: white;  
 }
 </style>

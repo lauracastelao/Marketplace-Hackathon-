@@ -75,7 +75,7 @@
           <label class="form-check-label" for="gridCheck"> Recordar </label>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary">Contactar</button>
+      <button type="submit" class="btn btn-secondary">Contactar</button>
     </form>
   </div>
 </template>

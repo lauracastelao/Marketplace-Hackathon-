@@ -44,9 +44,15 @@
     </div>
   </div>
   <div class="col-12">
-     <a class="btn btn-primary" > <RouterLink to="/createmember"><H6>Add course</H6></RouterLink></a>
+     <a class="btn btn-secondary" > <RouterLink to="/createmember"><H6>Add course</H6></RouterLink></a>
+     <!-- <a class="button">
+      <img src="src\assets\img\Visa.png">
+      <a/> -->
   </div>
 </form>
+
+
+
 </template>
 
 <style scoped>
