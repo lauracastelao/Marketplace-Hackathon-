@@ -5,6 +5,7 @@ import Pop from "../components/CardPop.vue";
 </script>
 
 <template>
+
 <div class="row">
   <div class="col-sm-6">
     <div class="card">
@@ -36,4 +37,11 @@ h6 {
 a{
   color: white;  
 }
+
+.card-body{
+
+width: 20vh;
+    height: 30vh;
+}
+
 </style>

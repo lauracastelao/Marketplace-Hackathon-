@@ -1,55 +1,35 @@
+# Marketplace-Educoders
 
-# ᴇᴅᴜᴄᴏᴅᴇʀs-ʜᴀᴄᴋᴀᴛʜᴏɴ
+This template should help get you started developing with Vue 3 in Vite.
 
-# Hi, We are Educoders 👋
+## Recommended IDE Setup
 
-Educoders surge a raíz de una idea principal, un marketplace que recoja diferentes
-caracteristicas:
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-● Anuncio 
+## Customize configuration
 
-● Usuario 
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-● Cliente 
+## Project Setup
 
-● Contacto 
-
-
-## Framework
-
-
-![Logo](https://img.icons8.com/color/2x/vue-js.png)
-
-
-## Color Reference
-
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Example Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
-| Example Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-| Example Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
-
-
-## Installation
-
-Install my-project with npm
-
-```bash
-  npm install
+```sh
+npm install
 ```
-  
 
-## Logotipo
-![Logo](https://raw.githubusercontent.com/lauracastelao/image/main/assets/EducodersLogo.png)
+### Compile and Hot-Reload for Development
 
-Created by:
+```sh
+npm run dev
+```
 
-## 🔗 Resources
+### Compile and Minify for Production
 
+```sh
+npm run build
+```
 
-[Bootstrap (Framework CSS)](https://getbootstrap.com/docs/5.0/getting-started/introduction/ "Bootstrap 5")
+### Run Unit Tests with [Vitest](https://vitest.dev/)
 
-https://www.canva.com/
-
-
+```sh
+npm run test:unit
+```
