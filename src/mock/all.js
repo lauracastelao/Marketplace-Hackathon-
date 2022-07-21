@@ -11,7 +11,7 @@ const advertisers = [
     coformador: 'David St',
     location: 'Madrid, sana',
     cover:'https://www.noticias.ltda/wp-content/uploads/2019/02/Curso-online.png',
-    complete: false
+   completed: false
 },
   {
     id: 2,
@@ -25,7 +25,7 @@ const advertisers = [
     coformador: 'Marta Benitez',
     location: 'Medellin, Colombia',
     cover: 'https://mastermarketingupv.com/blog-macom/13-titulos-profesionales-de-marketing-online-validose-todo-el-mundo-y-gratis/',
-    complete: false
+   completed: false
 },
   {
     id: 3,
@@ -39,7 +39,7 @@ const advertisers = [
     coformador: 'Sofia Perez',
     location: 'Barcelona, Espana',
     cover: 'https://freerangestock.com/photos/61056/data-analytics-concept.html',
-    complete: false
+    completed: false
 },
   {
     id: 4,
@@ -53,7 +53,7 @@ const advertisers = [
     coformador: 'Macarena Zanches',
     location: 'Buens Aires, Argenitna',
     cover: 'https://www.marketinhouse.es/diseno-ux-ui/',
-    complete: false
+    completed: false
 },
   {
     id: 5,
@@ -67,7 +67,7 @@ const advertisers = [
     coformador: 'Facundo Zetta',
     location: 'Valencia, Espana',
     cover: 'https://www.toptal.com/python/an-introduction-to-mocking-in-python',
-    complete: false
+    completed: false
 },
   {
     id: 6,
@@ -80,7 +80,7 @@ const advertisers = [
     coformador: 'Danilo Benitez',
     location: 'Medellin, Colombia',
     cover: 'https://www.comunicae.es/nota/curso-desarrollo-web-mediante-lenguajes-guion-1232412/',
-    complete: false
+    completed: false
 },
   {
     id: 7,
@@ -93,7 +93,7 @@ const advertisers = [
     coformador: 'Maria Luchini',
     location: 'Lima, Peru',
     cover: 'https://rockcontent.com/es/blog/php/',
-    complete: false
+    completed: false
 },
   {
     id: 8,
@@ -106,7 +106,7 @@ const advertisers = [
     coformador: 'Viola Frutnes',
     location: 'Madrid, sana',
     cover: 'https://www.certus.edu.pe/blog/que-es-sql/',
-    complete: false
+    completed: false
 },
   {
     id: 9,
@@ -119,7 +119,7 @@ const advertisers = [
     coformador: 'Laura Soto',
     location: 'Madrid, sana',
     cover: 'https://github.com/explore',
-    complete: false
+    completed: false
 }
 ]
 

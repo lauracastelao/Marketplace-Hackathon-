@@ -1,12 +1,12 @@
 <script setup>
 
-import { advertisersFactory } from "../todosSetup";
-const { advertisersIncompleted, toggle } = advertisersFactory();
+
 </script>
 
 <template>
 
 
+<<<<<<< HEAD
 
 <Card/>
 <Header/>
@@ -41,3 +41,16 @@ const { advertisersIncompleted, toggle } = advertisersFactory();
 @import "../assets/card.css";
 </style>
 >>>>>>> 1c5e704fa70ef4332d2037a0fd01d3526c46ff27
+=======
+<Card/>
+<Header/>
+<Footer/>
+  
+
+</template>
+
+
+<style scoped>
+@import "../assets/card.css";
+</style>
+>>>>>>> 803c4fd62d4fcad0d648d741dba82f4b0a4cf694
