@@ -1,6 +1,7 @@
-const todos = [
+
+const advertisers = [
   {
-    id_curso: 0,
+    id: 0,
     name: 'Full Stack',
     description:
       'Conviértete en un desarrollador web full stack. Aprende diseño Front-end y arquitectura Back-end además de las tecnologías más punteras. Aprenderás a programar a partir de los fundamentos de HTML5, CSS3, JavaScript, Node.js, Express, MongoDB y React. Puedes realizar este curso a tiempo completo o parcial.',
@@ -14,7 +15,7 @@ const todos = [
       'https://www.noticias.ltda/wp-content/uploads/2019/02/Curso-online.png',
   },
   {
-    id_curso: '2',
+    id: '2',
     name: 'Marketing',
     description:
       'Aprenda Marketing Digital para crecer su negocio: Marketing de redes sociales, Facebook, SEO, YouTube, E-mail Marketing.',
@@ -27,7 +28,7 @@ const todos = [
     cover: 'https://mastermarketingupv.com/blog-macom/13-titulos-profesionales-de-marketing-online-validos-en-todo-el-mundo-y-gratis/',
   },
   {
-    id_curso: '3',
+    id: '3',
     name: 'Data Analytics',
     description:
       'vas a aprender como hacer informes y reportes con dashboards en distintos proyectos, ejercicios y prácticas',
@@ -40,7 +41,7 @@ const todos = [
     cover: 'https://freerangestock.com/photos/61056/data-analytics-concept.html',
   },
   {
-    id_curso: '4',
+    id: '4',
     name: 'Diseño UX/UI',
     description:
       'Conviértete en un diseñador UX/UI. Aprende a realizar diseños en los que el usuario sea el protagonista gracias a el proceso de Design Thinking y valida tus ideas a través de los conceptos de user research, prototipado, user testing y la evaluación heurística. Puedes realizar este curso a tiempo completo o parcial.',
@@ -53,7 +54,7 @@ const todos = [
     cover: 'https://www.marketinhouse.es/diseno-ux-ui/',
   },
   {
-    id_curso: '5',
+    id: '5',
     name: 'Python TOTAL',
     description:
       'Aplicarás Python en aplicaciones como: Juegos, Inteligencia Artificial, Machine Learning, Data Science, Gestión Administrativa y mucho más',
@@ -66,7 +67,7 @@ const todos = [
     cover: 'https://www.toptal.com/python/an-introduction-to-mocking-in-python',
   },
   {
-    id_curso: '6',
+    id: '6',
     name: 'Angular',
     description: 'Crear aplicaciones en Angular siguiendo las mejores prácticas. Dominar TypeScript para crear aplicaciones en Angular',
     duration: '600 hs',
@@ -78,7 +79,7 @@ const todos = [
     cover: 'https://www.comunicae.es/nota/curso-desarrollo-web-mediante-lenguajes-guion-1232412/',
   },
   {
-    id_curso: '7',
+    id: '7',
     name: 'PHP',
     description: 'Aplicará los diferentes tipos de datos que se manejan en PHP y las reglas generales para nombrar las variables.',
     duration: '200 hs',
@@ -90,7 +91,7 @@ const todos = [
     cover: 'https://rockcontent.com/es/blog/php/',
   },
   {
-    id_curso: '8',
+    id: '8',
     name: 'Bases de datos (SQL)',
     description: 'este curso debería ser tomado no solo por aquellos que no posean conocimientos sobre bases de datos, sino por cada profesional que desee optimizar al máximo las bases de datos con las que trabaja.',
     duration: '250 hs',
@@ -102,7 +103,7 @@ const todos = [
     cover: 'https://www.certus.edu.pe/blog/que-es-sql/',
   },
   {
-    id_curso: '9',
+    id: '9',
     name: 'Git y GitHub desde Cero a Experto',
     description: 'Sistema de control de versiones Git y GitHub desde cero, de manera rápida, bien explicada y 100% Actualizado!',
     duration: '230 hs',
@@ -115,11 +116,11 @@ const todos = [
   }
 ]
 
-export default todos
+export default advertisers;
 
 // ,
 //   {
-//     id_curso: '',
+//     id: '',
 //     name: '',
 //     description: '',
 //     duration: '',
