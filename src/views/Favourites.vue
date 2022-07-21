@@ -1,5 +1,6 @@
 <script setup>
 import {advertisersFactory} from '../todosSetup'
+import Pop from '../components/Pop.vue'
 const {advertisersCompleted, deleteAdvertiser} = advertisersFactory();
 </script>
 
@@ -40,6 +41,7 @@ const {advertisersCompleted, deleteAdvertiser} = advertisersFactory();
       <button class="heart" @click="deleteAdvertiser(advertiser.id)">❌</button>
     </div>
   </div>
+ 
 </template>
 
 <style  scoped>
