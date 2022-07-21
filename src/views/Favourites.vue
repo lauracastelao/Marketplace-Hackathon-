@@ -21,13 +21,14 @@ const {advertisersCompleted, deleteAdvertiser} = advertisersFactory();
       <button class="delete" @click="deleteAdvertiser(advertiser.id)">Delete</button>
     </div>
   </div> -->
-
+<h3>Favoritos</h3>
+<p v-if="advertisersCompleted.length === 0"> <a>No has Agregado nada a Favoritos</a> </p>
   <div class="card" style="width: 18rem">
-    <img
+   <!--  <img
       src="https://miro.medium.com/max/1200/1*XpExcSt-d8XdnkIT3bcutg.jpeg"
       class="card-img-top"
       alt="..."
-    />
+    /> -->
     <div
       class="card-body"
       v-for="advertiser in advertisersCompleted"
@@ -46,4 +47,19 @@ const {advertisersCompleted, deleteAdvertiser} = advertisersFactory();
 
 <style  scoped>
 @import '../assets/card.css';
+
+p{
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+
+h3 {
+  text-align: center;
+}
+
+div {
+  margin: auto;
+}
 </style> 
