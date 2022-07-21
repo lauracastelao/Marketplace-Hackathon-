@@ -32,9 +32,7 @@
           <li class="nav-item">
             <RouterLink to="/member">Members</RouterLink>
           </li>
-          <li class="nav-item">
-            <RouterLink to="/contacto">Contacto</RouterLink>
-          </li>
+         
         </ul>
         <form class="d-flex" role="search">
           <input

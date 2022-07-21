@@ -19,8 +19,6 @@ header {
   padding-bottom: 10vh;
   margin: 0;
   display:flex;
- 
-
 }
 
 h1 {
