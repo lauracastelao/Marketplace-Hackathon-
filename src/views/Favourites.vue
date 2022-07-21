@@ -23,11 +23,11 @@ const {advertisersCompleted, deleteAdvertiser} = advertisersFactory();
   </div> -->
 
   <div class="card" style="width: 18rem">
-    <img
+    <!-- <img
       src="https://miro.medium.com/max/1200/1*XpExcSt-d8XdnkIT3bcutg.jpeg"
       class="card-img-top"
       alt="..."
-    />
+    /> -->
     <div
       class="card-body"
       v-for="advertiser in advertisersCompleted"
