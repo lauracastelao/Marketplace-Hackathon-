@@ -37,7 +37,7 @@ const { filterByWorld } = advertisersFactory();
             <RouterLink to="/member">Miembros</RouterLink>
           </li>
         </ul>
-        <form class="d-flex" role="search">
+        <div class="d-flex" role="search">
           <input
             class="form-control me-2"
             type="search"
@@ -50,7 +50,7 @@ const { filterByWorld } = advertisersFactory();
           >
             Search
           </button>
-        </form>
+        </div>
       </div>
     </div>
   </nav>

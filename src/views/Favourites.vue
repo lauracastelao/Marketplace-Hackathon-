@@ -5,7 +5,10 @@ const {advertisersCompleted, deleteAdvertiser} = advertisersFactory();
 </script>
 
 <template>
-  
+  <h3>Favoritos</h3>
+
+  <p v-if="advertisersCompleted.length === 0"><a>No tienes favoritos agregados</a></p>
+
 
   <div class="card" style="width: 18rem">
   
@@ -76,5 +79,10 @@ button {
 
 div{
   margin:auto;
+}
+
+h3, p {
+  text-align: center;
+  margin-top: 2rem;
 }
 </style> 

@@ -213,9 +213,7 @@ const addAndNavigate = (
                         </div>
                       </div>
                       <div class="col-12">
-                        <button type="button" class="btn btn-info">
-                          Pagar
-                        </button>
+                       
                       </div>
                     </div>
                   </form>

@@ -9,7 +9,7 @@ import CreateMember from '../views/CreateMember.vue'
 import LoginMember from '../views/LoginMembers.vue'
 import EditMember from '../views/EditMember.vue'
 import BuyAdvertiser from '../views/BuyAdvertiser.vue'
-
+import moreInformarion from '../views/moreInformation.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -64,6 +64,11 @@ const router = createRouter({
       path: '/buyadvertiser',
       name: 'buyadvertiser',
       component: BuyAdvertiser
+    },
+    {
+      path: '/moreinfo',
+      name: 'moreinfo',
+      component: moreInformarion
     }
   ]
 })
