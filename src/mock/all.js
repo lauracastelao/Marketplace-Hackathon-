@@ -11,7 +11,8 @@ const advertisers = [
     coformador: 'David St',
     location: 'Madrid, sana',
     cover:'../assets/img/logo.png',
-   completed: false
+   completed: false,
+   cart: false
 },
   {
     id: 2,
@@ -24,7 +25,8 @@ const advertisers = [
     coformador: 'Marta Benitez',
     location: 'Medellin, Colombia',
     cover: 'https://mastermarketingupv.com/blog-macom/13-titulos-profesionales-de-marketing-online-validose-todo-el-mundo-y-gratis/',
-   completed: false
+   completed: false,
+   cart: false
 },
   {
     id: 3,
@@ -38,7 +40,8 @@ const advertisers = [
     coformador: 'Sofia Perez',
     location: 'Barcelona, Espana',
     cover: 'https://freerangestock.com/photos/61056/data-analytics-concept.html',
-    completed: false
+    completed: false,
+    cart: false
 },
   {
     id: 4,
@@ -52,7 +55,8 @@ const advertisers = [
     coformador: 'Macarena Zanches',
     location: 'Buens Aires, Argenitna',
     cover: 'https://www.marketinhouse.es/diseno-ux-ui/',
-    completed: false
+    completed: false,
+    cart: false
 },
   {
     id: 5,
@@ -66,7 +70,8 @@ const advertisers = [
     coformador: 'Facundo Zetta',
     location: 'Valencia, Espana',
     cover: 'https://www.toptal.com/python/an-introduction-to-mocking-in-python',
-    completed: false
+    completed: false,
+    cart: false
 },
   {
     id: 6,
@@ -79,7 +84,8 @@ const advertisers = [
     coformador: 'Danilo Benitez',
     location: 'Medellin, Colombia',
     cover: 'https://www.comunicae.es/nota/curso-desarrollo-web-mediante-lenguajes-guion-1232412/',
-    completed: false
+    completed: false,
+    cart: false
 },
   {
     id: 7,
@@ -92,7 +98,8 @@ const advertisers = [
     coformador: 'Maria Luchini',
     location: 'Lima, Peru',
     cover: 'https://rockcontent.com/es/blog/php/',
-    completed: false
+    completed: false,
+    cart: false
 },
   {
     id: 8,
@@ -105,7 +112,8 @@ const advertisers = [
     coformador: 'Viola Frutnes',
     location: 'Madrid, sana',
     cover: 'https://www.certus.edu.pe/blog/que-es-sql/',
-    completed: false
+    completed: false,
+    cart: false
 },
   {
     id: 9,
@@ -118,7 +126,8 @@ const advertisers = [
     coformador: 'Laura Soto',
     location: 'Madrid, sana',
     cover: 'https://github.com/explore',
-    completed: false
+    completed: false,
+    cart: true
 }
 ];
 

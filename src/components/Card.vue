@@ -3,7 +3,7 @@ import { ref } from "@vue/reactivity";
 import { advertisersFactory } from "../todosSetup";
 import addPictures from "../mock/all.js";
 
-const { advertisersIncompleted, toggle } = advertisersFactory();
+const { advertisersIncompleted, toggle, addCourseCart, addCartInCompleted } = advertisersFactory();
 /* const addPicture = ref([...addPictures]);
 
 const picturesFind = addPicture.value.forEach((t)=> {
@@ -46,6 +46,7 @@ const picturesFind = addPicture.value.forEach((t)=> {
         <button id="margin" type="button" class="btn btn-success"> <RouterLink to="/moreinfo"> +info </RouterLink>  </button>
 
         <button class="heart" @click="toggle(advertiser.id)">❤️</button>
+        <button class="heart" @click="addCourseCart(advertiser.id)">€</button>
       </div>
     </div>
   </div>
@@ -103,8 +104,8 @@ const picturesFind = addPicture.value.forEach((t)=> {
 }
 
 #margin {
-  margin: -2px;
-  margin-top: 2px ;
+  margin: -5px;
+  margin-top: 1px ;
 }
 
 .changecolor {

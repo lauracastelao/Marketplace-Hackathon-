@@ -11,12 +11,28 @@ const advertisersCompleted = computed(() =>
   advertisers.value.filter((t) => t.completed)
 );
 
+const addCartInCompleted = computed(()=>
+advertisers.value.filter((t) => !t.cart)
+);
+
+const addCartCompleted = computed(()=>
+advertisers.value.filter((t) => t.cart)
+);
+
 const toggle = (id) => {
   const advertiser = advertisers.value.find((t) => t.id === id);
   if (advertiser?.completed !== undefined) {
     advertiser.completed = !advertiser.completed;
   }
 };
+
+const addCourseCart = (id) => {
+  const advertiser = advertisers.value.find((t) => t.id === id);
+  if (advertiser?.cart !== undefined) {
+    advertiser.cart = !advertiser.cart;
+  }
+};
+
 
 const add = (name, description) => {
   const newMembers = {id: advertisers.value.length + 1, name, description,  completed: false};
@@ -51,7 +67,10 @@ const update = (payload) => {
     deleteAdvertiser,
     add,
     update,
-    filterByWorld
+    filterByWorld,
+    addCartCompleted,
+    addCartInCompleted,
+    addCourseCart
     //addPictures
   });
 
