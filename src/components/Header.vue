@@ -46,8 +46,9 @@ import { advertisersFactory } from "../todosSetup";
           <input
             placeholder="test"
             class="form-control me-2"
-            v-model="courseName"
           />
+            <!-- v-model="courseName" -->
+          
           <button class="btn btn-outline-success">
             Search</button>
           <!-- @click="onSearchHandler" -->

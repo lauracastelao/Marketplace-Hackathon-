@@ -66,7 +66,7 @@ const deleteAdvertiser = (id) => {
     deleteAdvertiser,
     add,
     update,
-    filterByWorld,
+    //filterByWorld,
     addCartCompleted,
     addCartInCompleted,
     addCourseCart
