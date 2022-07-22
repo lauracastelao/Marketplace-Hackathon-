@@ -1,7 +1,7 @@
 import { mount } from '@vue/test-utils'
 import { computed } from 'vue';
 import { test, vi, describe, expect } from 'vitest';
-import Card from '../components/Card.vue';
+import LoginMember from '../views/LoginMembers.vue';
 
 import * as todosSetup from '../todosSetup'
 
@@ -20,18 +20,18 @@ const setupMock = {
 describe('test unit', () => {
 
     test('test components', () => {
-        const wrapper = mount(Card);
+        const wrapper = mount(LoginMember);
 
-        expect(wrapper.text()).toContain('');
+        expect(wrapper.text()).toContain('Login');
     });
-    
+
     test('List is empty', () => {
         const spy = vi.spyOn(todosSetup, 'advertisersFactory').mockReturnValue({
             ...setupMock
         });
-        const wrapper = mount(Card);
+        const wrapper = mount(LoginMember);
     
-        expect(wrapper.text()).toContain('');
+        expect(wrapper.text()).toContain('Eres profesor');
         expect(wrapper.text()).toContain('');
     });
     
