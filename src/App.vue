@@ -24,7 +24,7 @@ prefetch();
 </script>
 
 <template>
-  <h3 v-if="isLoading">Loading...</h3>
+<h3 v-if="isLoading">Cargando los mejores Cursos...</h3>
 
   <template v-if="!isLoading">
     <header id="header">

@@ -1,29 +1,14 @@
 <script setup>
-import { ref } from "@vue/reactivity";
-import { advertisersFactory } from "../todosSetup";
-import addPictures from "../mock/all.js";
-
-const { advertisersIncompleted, toggle, addCourseCart, addCartInCompleted } = advertisersFactory();
-/* const addPicture = ref([...addPictures]);
-
-const picturesFind = addPicture.value.forEach((t)=> {
-})
- */
+import {advertisersFactory} from '../todosSetup'
+const {advertisersIncompleted, deleteAdvertiser} = advertisersFactory();
 </script>
 
 <template>
-  <div class="img_banner">
-    <img
-      class="banner_head"
-      src="../assets/img/Hackea tu educación (2).png"
-      alt=""
-    />
-  </div>
-  <div class="card container-fluid border-0" style="width: 18rem">
-    <!-- <img v-for="addPicture in addPictures" :key="addPicture.cover"
-      :src="addPictures"
-      class="card-img-top"
-    > -->
+
+<h3>+ información</h3>
+
+    <div class="card" style="width: 18rem">
+  
     <div class="card" style="width: 18rem"></div>
     <div
       class="card-body"
@@ -32,28 +17,47 @@ const picturesFind = addPicture.value.forEach((t)=> {
     >
       <div class="images">
         <img src="src\assets\Vue.png" />
+        <p>curso:</p>
         <p class="card-text">
+            
           <strong>{{ advertiser.name }}</strong>
         </p>
       </div>
       <br />
+      <p>Descripcion:</p>
       <p class="card-text">{{ advertiser.description }}</p>
+      <br>
+      <p>duracion:</p>
+      <p class="card-text">{{ advertiser.duration }}</p>
+      <br>
+      <p>Moadalidad:</p>
+      <p class="card-text">{{ advertiser.modality }}</p>
+      <br>
+      <p>formador:</p>
+      <p class="card-text">{{ advertiser.formador }}</p>
+      <br>
+      <p>Coformador:</p>
+      <p class="card-text">{{ advertiser.coformador }}</p>
+      <br>
+      <p>Locación:</p>
+      <p class="card-text">{{ advertiser.location }}</p>
+      <br>
+      <p>Precio:</p>
       <strong>{{ advertiser.price }}</strong>
       <br />
       <div class="buttons">
         <button id="margin" type="button" class="btn btn-secondary"><RouterLink to="/contact"><a class="changecolor">Contactar</a></RouterLink></button>
 
-        <button id="margin" type="button" class="btn btn-success"> <RouterLink to="/moreinfo"> +info </RouterLink>  </button>
+        <button id="margin1" type="button" class="btn btn-success"> <RouterLink to="/"> Home </RouterLink>  </button>
 
         <button class="heart" @click="toggle(advertiser.id)">❤️</button>
-        <button class="heart" @click="addCourseCart(advertiser.id)">€</button>
       </div>
     </div>
   </div>
-  
 </template>
 
-<style lang="css" scoped>
+<style scoped>
+
 .img_banner {
   width: 100%;
   height: 50%;
@@ -103,13 +107,26 @@ const picturesFind = addPicture.value.forEach((t)=> {
   margin: 5px;
 }
 
-#margin {
-  margin: -5px;
-  margin-top: 1px ;
+/* #margin {
+  margin: -2px;
+  margin-top: 2px ;
+} */
+
+#margin1 {
+    background: rgb(226, 199, 27);
+    border: none;
 }
 
 .changecolor {
   color: #fff;
 }
 
+div {
+    margin: auto;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 2rem;
+}
 </style>

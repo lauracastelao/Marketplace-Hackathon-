@@ -36,13 +36,13 @@ import { advertisersFactory } from "../todosSetup";
             <RouterLink to="/favourites">Favoritos</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink to="/cart">Cart</RouterLink>
+            <RouterLink to="/cart">Carrito</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink to="/member">Members</RouterLink>
+            <RouterLink to="/member">Miembros</RouterLink>
           </li>
         </ul>
-        <div class="d-flex">
+        <div class="d-flex" role="search">
           <input
             placeholder="test"
             class="form-control me-2"

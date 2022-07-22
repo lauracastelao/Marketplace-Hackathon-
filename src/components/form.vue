@@ -4,7 +4,7 @@
   <h1>Contacto</h1>
 
   <div class="container">
-    <form>
+    <div>
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputEmail4">Email</label>
@@ -75,12 +75,19 @@
           <label class="form-check-label" for="gridCheck"> Recordar </label>
         </div>
       </div>
-      <button type="submit" class="btn btn-secondary">Contactar</button>
-    </form>
+      <button type="submit" class="btn btn-secondary"><RouterLink to="/"><a>Contactar</a></RouterLink></button>
+  </div>
   </div>
 </template>
 <style lang="css" scoped>
 .container {
-  width: 60vh;
+ width: 60vh;
+  margin-top:1rem ;
+  background: rgb(240, 237, 207);
+  padding: 1rem;
+  margin: auto;
+}
+a{
+  color: #fff;
 }
 </style>

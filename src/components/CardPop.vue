@@ -39,7 +39,7 @@ button {
 .card-body {
   padding: 7vh;
   margin-bottom: 20vh;
-  width: 40vh;
+ 
 }
 .card {
   margin-top: 10vh;
