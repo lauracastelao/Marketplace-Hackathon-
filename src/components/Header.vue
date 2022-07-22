@@ -1,8 +1,13 @@
 <script setup>
-  import {advertisersFactory} from '../todosSetup';
+import { advertisersFactory } from "../todosSetup";
 
-  const {filterByWorld} = advertisersFactory();
-  </script>
+// const { filterByWorld } = advertisersFactory();
+// let courseName = 'test'
+// function onSearchHandler() {
+//   // filterByWorld(courseName);
+//   console.log(courseName);
+// }
+</script>
 
 <template>
   <nav class="navbar navbar-expand-lg bg-light fixed-top d-flex">
@@ -36,19 +41,19 @@
           <li class="nav-item">
             <RouterLink to="/member">Members</RouterLink>
           </li>
-         
         </ul>
-        <form class="d-flex" role="search">
+        <div class="d-flex">
           <input
+            placeholder="test"
             class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
+            v-model="courseName"
           />
-          <button @click="filterByWorld(advertisers.name)" class="btn btn-outline-success">Search</button>
+          <button class="btn btn-outline-success">
+            Search</button>
+          <!-- @click="onSearchHandler" -->
           <!-- <button class="heart" @click="toggle(advertiser.id)">❤️</button> -->
-           <!-- v-for="advertisers in filterByWorld" :key="advertisers.name" -->
-        </form>
+          <!-- v-for="advertisers in filterByWorld" :key="advertisers.name" -->
+        </div>
       </div>
     </div>
   </nav>

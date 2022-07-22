@@ -12,7 +12,7 @@ const advertisersCompleted = computed(() =>
 );
 
 const toggle = (id) => {
-  const advertiser = advertisers.value.find((t) => t.id === id);
+  const advertiser = advertisers.value.find( (t)=> t.id === id);
   if (advertiser?.completed !== undefined) {
     advertiser.completed = !advertiser.completed;
   }
@@ -28,21 +28,20 @@ const update = (payload) => {
   advertisers.value = payload;
 }
 
-  const deleteAdvertiser = (id) => {
-    advertisers.value = advertisers.value.filter((t) => t.id !== id);
-  };
+const deleteAdvertiser = (id) => {
+  advertisers.value = advertisers.value.filter((t) => t.id !== id);
+};
 
   //const searchButton = document.querySelector('.btn btn-outline-success');
   //searchButton.onclick = filterByWorld();
   
-  const filterByWorld = (name) =>{ 
-    
-    const filtroPorPalabra = advertisers.filter (item => item.name.includes("Angular"))
-    filtroPorPalabra.map(() => {
-      return true;
-    })
-    console.log(filtroPorPalabra);
-  }
+  // const filterByWorld = (name) =>{ 
+  //   console.log('name', name);
+  //   advertisers.value = advertisers.value.filter(item => item.name.includes(name ?? ''))
+  //   //filtroPorPalabra.map(() => {
+  //   //return true;
+  //   //})
+  // }
 
   const advertisersFactory = () => ({
     advertisersIncompleted,
