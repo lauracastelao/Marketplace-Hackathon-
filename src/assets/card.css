@@ -1,0 +1,58 @@
+.ficha {
+    height: 20vh;
+    width: 13vw;
+    margin-bottom:1rem;
+}
+
+.grid {
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 4rem;
+    margin: 2rem;
+}
+
+
+@media (max-width: 400px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin: 0.5rem;
+        
+    }
+}
+
+.box {
+    background: rgba(151, 151, 151, 0.19);
+    font-family: 'Concert One', cursive;
+    text-align: center;
+    line-height: 2rem;
+}
+@media (max-width: 400px) {
+    .box {
+        display: inline;
+    }
+}
+
+h4 {
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    font-family: 'Concert One', cursive;
+}
+
+.icon-favorite {
+    height: 30px;
+    margin: auto;
+    padding-left: 3rem;
+}
+
+@media (max-width: 400px){
+    .icon-favorite {
+        height: 20px;
+        margin: auto;
+        margin-top: 1rem;
+        
+    }
+} 

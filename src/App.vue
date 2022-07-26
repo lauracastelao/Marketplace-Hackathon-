@@ -1,85 +1,46 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+// import { RouterLink, RouterView } from 'vue-router'
+// import Footer from './components/footer.vue';
+
+// import Footer1 from './components/Footer.vue';
+
+import { ref } from "@vue/reactivity";
+import BootHeader from "./components/BootHeader.vue";
+
+import serviceAsync from "./service/servicesAsync";
+import { advertisersFactory } from "./todosSetup";
+import Header from "./components/Header.vue";
+
+const { update } = advertisersFactory();
+
+const isLoading = ref(true);
+
+async function prefetch() {
+  update(await serviceAsync.getAdvertiser());
+  isLoading.value = false;
+}
+
+prefetch();
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+<h3 v-if="isLoading">Cargando los mejores Cursos...</h3>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+  <template v-if="!isLoading">
+    <header id="header">
+      <Header />
+    </header>
+    <div id="bootheader">
+      <BootHeader />
     </div>
-  </header>
+    <main id="main"></main>
 
-  <RouterView />
+    <div id="footer">
+      <Footer />
+    </div>
+
+    <RouterView />
+  </template>
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
-</style>
+  
+<style scoped></style>
